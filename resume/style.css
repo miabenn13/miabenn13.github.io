@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* border-style: dashed; */
+    box-sizing: border-box;
+    }
+
+body {
+    background-color: rgb(237, 235, 235);
+    /* margin-left: 20px;
+    margin-right: 20px; */
+}
+
+.heavy{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.5;
+  /* margin-left: -14px; */
+}
+
+.thin{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/* STEP 1 - WRITE IN EACH OF YOUR SECTIONS AND ASSIGN EACH A LETTER */
+.logo{
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -350px;
+  /* grid-gap: 20px; */
+}
+
+svg{
+  margin-top: 35px;
+  margin-left: -15px;
+  max-height: 90px;
+}
+
+
+nav{
+  grid-area: n;
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500; 
+  font-size: 15px;
+  margin-top: 150px;
+}
+
+/* header{
+  grid-area: h;
+  text-align: right;
+} */
+
+/* .about{
+  grid-area: m;
+} */
+
+.education{
+  grid-area: e;
+}
+
+.art{
+  grid-area: x;
+}
+
+.work{
+  grid-area: w;
+}
+
+.activities{
+  grid-area: a;
+}
+
+.skills{
+  grid-area: s;
+}
+
+/* STEP 2 - BUILD YOUR DESKTOP AND TABLET GRIDS */
+.container{
+  height: 100%;
+  display: grid;
+  /* space between gridlines */
+  grid-gap: 3px;
+  /* same for everyone */
+  grid-template-columns: repeat(2, 1fr);
+  /* this will be customized, based on your grid, use pixels or % */
+  grid-template-rows: auto;
+  /* use letters from step 1 to build the grid */
+  grid-template-areas:
+    ". ."
+    "n n"
+    "e e"
+    "x w"
+    "a s";
+    gap: 2em;
+
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+/* STEP 3 - BUILD YOUR MOBILE GRID, WHAT BECOMES ACTIVE WHEN PIXELS ARE 800PX OR LESS */
+@media screen and (max-width: 1200px){
+  .container{
+    display: grid;
+    grid-gap: 3px;
+    /* grid is only 1 column, keep it this way */
+    grid-template-columns:1fr;
+    /* you can enter values or auto will adjust the box sizes based on content */
+    grid-template-rows: auto;
+    grid-template-areas:
+    "l"
+    "n"
+    /* "h" */
+    /* "m" */
+    "e"
+    "x"
+    "w"
+    "a"
+    "s";
+
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* svg{
+    transform: scale(.9);
+    margin-top: 40px; */
+  }
+
+/* name */
+h1{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 60px;
+  margin-left: 500px;
+  margin-top: -100px;
+  color: rgb(128, 137, 192);
+  /* display: inline; */
+}
+
+/* artist - graphic designer */
+/* h5{
+  grid-area: "g";
+  display: grid;
+  column-width: 100px;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  margin-left: 145px;
+  margin-top: -30px;
+  width: 300%;
+  color: rgb(195, 121, 172);
+} */
+  /* MAKE ITALIC? */
+  /* font-weight: 600 italic;
+  padding: 20px; */
+/* } */
+
+/* contact info
+h6{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; 
+  font-size: 30px;
+  padding: 2px;
+} */
+
+/* section headers */
+h2{
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 25px;
+  padding-top: 25px;
+  padding-bottom: 0px;
+  color: rgb(195, 121, 172);
+}
+
+/* section descriptions */
+h4{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; 
+  font-size: 15px;
+  padding: 2px;
+  line-height: 1.5;
+  padding-top: 0px;
+  padding-bottom: 0x;
+  color:rgb(72, 72, 72);}
+
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.5;
+  color:rgb(72, 72, 72);}
+
+li{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; 
+  font-size: 15px;
+  color:rgb(72, 72, 72);
+}
+
+/* unvisited link */
+a:link {
+  color: #70726C;
+  text-decoration: none;
+  margin: 20px;
+}
+/* visited link */
+a:visited {
+  color: rgb(195, 121, 172);
+  text-decoration: none;
+  margin: 20px;
+}
+/* mouse over link */
+a:hover {
+  color: rgb(128, 137, 192);
+  text-decoration: none;
+  margin: 20px;
+}
+/* selected link */
+a:active {
+  color: #0000FF;
+  text-decoration: none;
+  margin: 20px;
+}
+/* Iphone in Safari version*/
+@media screen and (max-width: 736px){
+
+  .logo{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -260px;
+    /* grid-gap: 20px; */
+  }
+  h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    font-size:50px;
+    margin-left: 365px;
+    margin-top: -90px;
+    color: rgb(128, 137, 192);
+    /* display: inline; */
+  }
+
+  nav{
+    grid-area: n;
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; 
+    font-size: 13px;
+    margin-top: 150px;
+  }
+}

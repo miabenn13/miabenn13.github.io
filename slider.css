@@ -1,0 +1,151 @@
+* {box-sizing: border-box}
+body {font-family: 'Roboto', sans-serif; margin:0}
+.mySlides {display: none}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+/* NAV BAR */
+nav{
+  padding-left:1em;
+  padding-right: 4em;
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index:10;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  /* background-color: rgb(235, 238, 255); */
+  background-color: rgb(254, 242, 227);
+}
+
+nav ul {
+  margin:0;
+  padding:0;
+  display:flex;
+}
+nav li{
+  padding: 1em 0;
+  list-style-type: none;
+  padding: 25px;
+  font-size: 1.7em;
+}
+
+nav li a {
+  color:#370db3;;
+  font-weight: 600;
+  opacity: 0.6;
+  text-decoration: none;
+  transition: .3s;
+}
+
+nav li a:hover {
+  color:rgb(242, 134, 118);
+  opacity: 1;
+  text-decoration: none;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* ARROWS - Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 110%;
+  width: auto;
+  /* height: 100px; */
+  padding: 16px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: -22px;
+  color: #370db3;;
+  /* font-weight: bold; */
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* hoover effect */
+.prev:hover, .next:hover {
+  background-color: rgb(254, 242, 227);
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #6e5ebd;;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgb(242, 134, 118);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+
+}
+
+h2 {
+  position: relative;
+  margin-top: 110px;
+  left: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500px;
+  font-size: 50px;
+}
+
+p {
+  position: relative;
+  left: 50px;
+  margin-right: 5em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5rem;
+  text-align: left;
+  /* color: #000000;; */
+}
