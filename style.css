@@ -23,7 +23,7 @@ img {
 nav{
   padding-left:1em;
   padding-right: 4em;
-  position: fixed !important;
+  /* position: fixed !important; */
   display: inline;
   width: 100%;
   top:0;
