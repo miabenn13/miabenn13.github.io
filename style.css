@@ -21,14 +21,15 @@ img {
 }
 
 nav{
-  padding-left:1em;
-  padding-right: 4em;
-  /* position: fixed !important; */
-  display: inline;
+  position: fixed !important;  
+/* display: inline; */
   width: 100%;
+  height: 80px;
   top:0;
   left:0;
   z-index:10;
+  padding-left:1em;
+  padding-right: 4em;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 13px;
@@ -49,6 +50,7 @@ nav li{
   padding: 25px;
   font-size: 1.7em;
   text-decoration: none;
+  margin-top: 4px;
 }
 
 .icon2 {
@@ -101,16 +103,52 @@ nav li a:hover {
 } 
 
 
+/* ABOUT ME CSS*/
+.about-me {
+  height: 100vh !important;
+  background-color: rgb(247, 218, 183);
+  padding: 20vh 50px 0 50px;
+  column-count: 2;
+}
+
+.about-me img{
+  width: 70%;
+  border-radius: 8%;
+  margin-top: -1em;
+  margin-left: 5em;
+}
+
+.about-me p{
+  text-align: left;
+  color: #5f44b0;;
+  font-size:1em;
+  line-height: 1.5rem;
+  padding-top: 6em;
+  margin-right: 3em;
+}
+
+.paragraph2{
+  text-indent: 2em;
+}
+
+/* the span tag that wrap starts off my paragraph */
+.bigText {
+  font-size: 3em;
+  padding-right: .5em;
+}
+
+
 /* IMAGE GALLERY CSS */
 .image-gallery {
   color: rgb(67, 61, 53);
-  height: 100%;
+  height: 90%;
   display: grid;
   grid-template-columns: 1fr minmax(300px, 1fr)  minmax(300px, 1fr) minmax(300px, 1fr) 1fr;
   grid-template-rows: auto;
+  /* row-gap: 10px; */
   grid-gap: 70px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 50px;
+  padding-bottom: 100px;
   grid-template-areas:
   ". a b c ."
   ". d e f .";
@@ -118,14 +156,16 @@ nav li a:hover {
 
 .box-styling {
   height: 300px;
-  background-color: rgb(254, 242, 227);
+  background-color: rgb(227, 231, 255);
 }
 
 .box-wrapper{
   height:300px;
-  length:300px;
+  width:300px;
   border-radius: 5%;
+  margin: auto;
 }
+
 .box1 {
   grid-area: a;
 }
@@ -166,45 +206,13 @@ nav li a:hover {
   padding-right: .5ch;
 }
 
-/* ABOUT ME CSS*/
-.about-me {
-  height: 100vh !important;
-  background-color: rgb(247, 206, 156);
-  padding: 20vh 50px 0 50px;
-  column-count: 2;
-}
-
-.about-me img{
-  width: 70%;
-  border-radius: 8%;
-  margin-top: 4em;
-  margin-left: 2em;
-}
-
-.about-me p{
-  text-align: left;
-  color: #5f44b0;;
-  font-size:1em;
-  line-height: 1.5rem;
-}
-
-.paragraph2{
-  text-indent: 2em;
-}
-
-/* the span tag that wrap starts off my paragraph */
-.bigText {
-  font-size:2em;
-  padding-right:.5em;
-}
-
 
 /* CONTACT CSS */
 .contact {
   display: grid;
   justify-items: center;
   align-items: center;
-  height: 25vh !important;
+  height: 10vh !important;
   padding-bottom: 40vh;
   background-color: rgb(215, 215, 215) !important;
   grid-template-columns: 3fr minmax(2fr, 1fr) minmax(2fr, 1fr) 3fr;
@@ -217,23 +225,27 @@ nav li a:hover {
 .contact-title {
   font-size: 2em;
   grid-area: title;
-  padding-bottom: 50px;
+  margin-top: -5em;
 }
 
 .logo-svg {
+  padding-bottom: 5em;
   width: 250px;
   grid-area: logo;
 }
 
 .contact-wrapper {
+  padding-bottom: 15vh;
   grid-area: wrapper;
+  line-height: 1.5em;
 }
 
 
 /* FOOTER SECTION */
 footer{
+  padding-bottom: 20vh;
   grid-area: footer;
-  height: .5em;
+  height: 8em;
 }
   
 /* footer p{
@@ -251,6 +263,7 @@ footer ul {
   text-align: center;
   display: flex;
   flex-direction: row;
+  padding-bottom: 10em;
 }
 
 footer ul li{
@@ -285,6 +298,7 @@ body{
 .image-gallery {
   padding-bottom: 0px;
   margin-bottom: 600px;
+  margin: auto;
   grid-template-columns: 1fr minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
   grid-template-areas:
     ". a b ."
@@ -294,8 +308,9 @@ body{
 
 .box-wrapper{
   height:300px;
-  length:300px;
+  width:300px;
   border-radius: 5%;
+  margin: auto;
 }
 
 .home{
@@ -311,7 +326,13 @@ body{
   margin-top: 5px;
   /* margin-left: 72%; */
 }
+
+/* parallax */
+.welcome{
+  padding: 5vh 50px 0 50px;
 }
+}
+
 
 /* MEDIA QUERY FOR MOBILE */
  @media (max-width:735px){
@@ -334,7 +355,8 @@ nav {
 
 .image-gallery {
   padding-bottom: 200%;
-  background-color:rgb(181, 189, 234);
+  margin: auto;
+  background-color:rgb(227, 231, 255);
   grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
   grid-template-areas:
     ". a ."
@@ -345,9 +367,16 @@ nav {
     ". f .";
 }
 
+.box-wrapper{
+  height:300px;
+  width:300px;
+  border-radius: 5%;
+  margin: auto;
+}
+
 .contact {
   padding-bottom: 70%;
-  display:grid;
+  display: grid;
   grid-template-columns: 3fr minmax(2fr, 1fr) 3fr;
   grid-template-rows: auto;
   grid-template-areas:
@@ -355,23 +384,25 @@ nav {
     ". logo ."
     ". wrapper .";
   }
+
+
   /* about me for mobile grid */
   .about-me {
     display:grid;
     height: 100vh !important;
-    background-color: rgb(247, 206, 156);
-    padding: 20vh 50px 0 50px;
-    /* column-count: 2; */
+    background-color: rgb(247, 218, 183);
+    padding: 5vh 50px 0 50px;
   }
 
   .about-me img{
     width: 70%;
     border-radius: 8%;
-    margin-top: 4em;
+    margin-top: 10px;
     margin:auto;
   }
   
   .about-me p{
+    display: inline;
     text-align: left;
     color: #5f44b0;;
     font-size:1em;
@@ -388,7 +419,11 @@ nav {
     padding-right:.5em;
   }
   
-  
+/* parallax */
+.welcome{
+  padding: 5vh 30px 0 30px;
+}
+
 }
 
 
