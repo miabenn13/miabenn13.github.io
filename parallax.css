@@ -26,6 +26,7 @@
   height: 100vh;
   /* change background image */
   background-image: url(/images/favicon3.svg);
+  background-color:white;
   background-position: bottom center;
   background-size: cover;
   background-repeat: no-repeat;

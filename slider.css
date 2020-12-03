@@ -9,10 +9,16 @@ img {
 
 
 /* NAV BAR */
+.home{
+  grid-column: 2;
+  grid-row: 1;
+}
+
 nav{
   padding-left:1em;
   padding-right: 4em;
-  position: fixed;
+  position: fixed !important;
+  display: inline;
   width: 100%;
   top:0;
   left:0;
@@ -20,34 +26,57 @@ nav{
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 13px;
-  /* background-color: rgb(235, 238, 255); */
-  background-color: rgb(254, 242, 227);
+  text-decoration: none;
+  background-color: rgb(227, 231, 255);
+  /* background-color: rgb(254, 242, 227); */
 }
 
 nav ul {
   margin:0;
   padding:0;
   display:flex;
+  text-decoration: none;
 }
 nav li{
   padding: 1em 0;
   list-style-type: none;
   padding: 25px;
   font-size: 1.7em;
+  text-decoration: none;
 }
 
+.icon2 {
+  position: absolute;
+  grid-column: 2;
+  grid-row: 1;
+  width:5%;
+  margin-top: 2px;
+  margin-left: 45.5%;
+}
+
+/* text color */
 nav li a {
-  color:#370db3;;
+  color:rgb(255, 56, 25);
   font-weight: 600;
   opacity: 0.6;
   text-decoration: none;
   transition: .3s;
 }
 
+/* text hoover */
 nav li a:hover {
-  color:rgb(242, 134, 118);
+  color:rgb(255, 184, 30);
   opacity: 1;
   text-decoration: none;
+}
+
+.icon2 {
+  position: absolute;
+  grid-column: 2;
+  grid-row: 1;
+  width:5%;
+  margin-top: 2px;
+  margin-left: 45.5%;
 }
 
 
@@ -126,6 +155,19 @@ nav li a:hover {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
 .prev, .next,.text {font-size: 11px}
+
+nav {
+  padding-left: 0;
+}
+
+.icon2 {
+  position: absolute;
+  grid-column: 2;
+  grid-row: 1;
+  width:13%;
+  margin-top: 5px;
+  margin-left: 72%;
+}
 
 }
 
