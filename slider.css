@@ -158,12 +158,35 @@ nav li a:hover {
 @media only screen and (max-width: 300px) {
 .prev, .next,.text {font-size: 11px}
 
-nav {
+/* nav {
   padding-left: 0;
 }
 
 .icon2 {
   position: absolute;
+  grid-column: 2;
+  grid-row: 1;
+  width:13%;
+  margin-top: 5px;
+  margin-left: 72%;
+} */
+
+nav {
+  padding-left: 0;
+  font-size: 12px
+}
+
+nav li{
+  /* padding: 1em 0; */
+  list-style-type: none;
+  padding: 16px;
+  font-size: 1.7em;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.icon2 {
+  /* position: absolute; */
   grid-column: 2;
   grid-row: 1;
   width:13%;
