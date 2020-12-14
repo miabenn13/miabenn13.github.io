@@ -1,5 +1,5 @@
 *{
-    padding: 0;
+    padding-bottom: 20px;
     margin: 0;
     /* border-style: dashed; */
     box-sizing: border-box;
@@ -46,7 +46,7 @@ nav{
   font-family: 'Roboto', sans-serif;
   font-weight: 500; 
   font-size: 15px;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 /* header{
@@ -250,7 +250,7 @@ a:active {
     display: inline;
     font-family: 'Roboto', sans-serif;
     font-weight: 400; 
-    font-size: 13px;
-    margin-top: 150px;
+    font-size: 15px;
+    margin-top: 120px;
   }
 }
