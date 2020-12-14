@@ -341,10 +341,11 @@ footer svg {
 
 nav {
   padding-left: 0;
+  font-size: 10px
 }
 
 .icon2 {
-  position: absolute;
+  /* position: absolute; */
   grid-column: 2;
   grid-row: 1;
   width:13%;
