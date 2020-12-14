@@ -225,17 +225,17 @@ nav li a:hover {
 .contact-title {
   font-size: 2em;
   grid-area: title;
-  margin-top: -5em;
+  margin-top: -3em;
 }
 
 .logo-svg {
-  padding-bottom: 5em;
+  padding-bottom: 7em;
   width: 250px;
   grid-area: logo;
 }
 
 .contact-wrapper {
-  padding-bottom: 15vh;
+  padding-bottom: 7em;
   grid-area: wrapper;
   line-height: 1.5em;
   text-decoration: none;
