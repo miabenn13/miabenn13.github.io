@@ -7,15 +7,17 @@
 .regular-wrapper {
   z-index: 2;
   position: relative;
+  margin: 0 auto;
   height:100vh;
-  padding-top:20vh;
+  padding-top:15vh;
   background-color: rgb(227, 231, 255);
 }
 .regular-wrapper2 {
   z-index: 2;
   position: relative;
-  padding-top:6vh;
-  padding-bottom: 10vh;
+  margin: auto;
+  padding-top:7vh;
+  padding-bottom: 13vh;
   background-color: rgb(237, 237, 237);
 }
 
