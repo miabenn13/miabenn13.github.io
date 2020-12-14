@@ -448,7 +448,7 @@ nav li{
 }
 
 .contact-wrapper {
-  padding-bottom: 8vh;
+  padding-bottom: 12vh;
   grid-area: wrapper;
   line-height: 1.5em;
   text-decoration: none;

@@ -16,8 +16,8 @@
   z-index: 2;
   position: relative;
   margin: auto;
-  padding-top:3vh;
-  padding-bottom: 8vh;
+  /* padding-top:3vh; */
+  padding-bottom: 12vh;
   background-color: rgb(250, 249, 249);
 }
 
