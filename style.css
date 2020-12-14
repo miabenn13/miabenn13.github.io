@@ -355,6 +355,7 @@ nav {
 
 .image-gallery {
   padding-bottom: 1500px;
+  margin: auto;
   background-color:rgb(227, 231, 255);
   grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
   grid-template-areas:
