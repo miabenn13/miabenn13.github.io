@@ -496,6 +496,7 @@ footer{
   
 footer li {
   display:inline;
+  padding-bottom: 6em;
 }
   
 footer ul {
